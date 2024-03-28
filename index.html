@@ -1,14 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Device-shop></Device-shop></title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Вёрстка проекта с курса "HTML и CSS. Профессиональная вёрстка сайтов" с использованием методологии БЭМ</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device-shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-nav">
+        <a class="main-header__logo"><img class="main-header__logo-img" src="img/device-logo-black.svg" width="145"
+          height="36" alt="Логотип интернет-магазина Девайс">
+        </a>
+        <div class="main-nav__list user-nav">
+          <form class="user-nav__seach">
+            <label class="visually-hidden" for="site-seach">Поиск по сайту</label>
+            <input class="user-nav__input" type="search" name="site-seach" id="site-seach" placeholder="Текст поиска">
+            <button class="user-nav__button button" type="submit">Найти</button>
+          </form>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a>Войти</a>
+            </li>
+            <li class="user-nav__item">
+              <a>Выйти</a>
+            </li>
+            <li class="user-nav__item">
+              <a>Сравнить</a>
+            </li>
+            <li class="user-nav__item">
+              <a>Корзина</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item nav-catalog">
+            <button>Каталог товаров</button>
+            <button class="nav-catalog__toggle" type="button">
+              <span class="visually-hidden">Открыть подкаталог</span>
+            </button>
+            <ul class="nav-catalog__list">
+              <li class="nav-catalog__item">
+                <a>Виртуальная реальность</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a>Моноподы для селфи</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a>Экшн-камеры</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a>Фитнес-браслеты</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a>Умные часы</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a>Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-nav__item">
+            <a>Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a>Гарантия</a>
+          </li>
+          <li class="site-nav__item">
+            <a>Контакты</a>
+          </li>
+        </ul>
+    </div>
+  </header>
+  <main class="main-index main-block">
+
+  </main>
+</body>
+
 </html>

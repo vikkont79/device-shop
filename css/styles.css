@@ -1,1 +1,81 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+}
+
+.main-header {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.main-header__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #FFE17F;
+  margin-top: 40px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+}
+
+.main-header__logo {
+  margin: 0;
+  margin-top: -22px;
+  margin-bottom: 30px;
+}
+
+.main-header__logo-img {
+  display: block;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: rubik, sans-serif;
+}
+
+.user-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: raleway, sans-serif;
+}
+
+.nav-catalog__list {
+  display: none;
+}
