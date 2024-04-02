@@ -11,69 +11,95 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <nav class="main-nav">
-        <a class="main-header__logo"><img class="main-header__logo-img" src="img/device-logo-black.svg" width="145"
+      <a class="main-header__logo"><img class="main-header__logo-img" src="img/device-logo-black.svg" width="145"
           height="36" alt="Логотип интернет-магазина Девайс">
-        </a>
+      </a>
+      <nav class="main-nav">
         <div class="main-nav__list user-nav">
-          <form class="user-nav__seach">
+          <form class="user-seach">
             <label class="visually-hidden" for="site-seach">Поиск по сайту</label>
-            <input class="user-nav__input" type="search" name="site-seach" id="site-seach" placeholder="Текст поиска">
-            <button class="user-nav__button button" type="submit">Найти</button>
+            <input class="user-seach__input" type="search" name="site-seach" id="site-seach" placeholder="Текст поиска">
+            <button class="user-seach__button button" type="submit">Найти</button>
           </form>
-          <ul class="user-nav__list">
+          <ul class="user-nav__list user-login">
             <li class="user-nav__item">
-              <a>Войти</a>
+              <a href="#">
+                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="15" height="13"
+                  viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 12.787H13C12.8 10.187 10.9 7.98699 8.3 7.28699C9.3 6.68699 10 5.58699 10 4.28699C10 2.38699 8.4 0.786987 6.5 0.786987C4.6 0.786987 3 2.38699 3 4.28699C3 5.58699 3.7 6.68699 4.7 7.28699C2.1 7.98699 0.2 10.187 0 12.787Z"
+                    fill="black" />
+                </svg>
+                Войти</a>
             </li>
             <li class="user-nav__item">
               <a>Выйти</a>
             </li>
+          </ul>
+          <ul class="user-nav__list user-list">
             <li class="user-nav__item">
-              <a>Сравнить</a>
+              <a href="#">
+                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="10" height="12"
+                  viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0.388916H4V12.3889H6V0.388916Z" fill="black" />
+                  <path d="M2 4.38892H0V12.3889H2V4.38892Z" fill="black" />
+                  <path d="M10 3.38892H8V12.3889H10V3.38892Z" fill="black" />
+                </svg>
+                Сравнить</a>
             </li>
             <li class="user-nav__item">
-              <a>Корзина</a>
+              <a href="#">
+                <svg class="user-nav__icon" aria-hidden="true" focusable="false" width="16" height="14"
+                  viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.3 5.38892L11.8 5.58892L8.6 0.688916C8.5 0.488916 8.2 0.388916 8 0.388916C7.8 0.388916 7.5 0.488916 7.4 0.688916L4.2 5.58892H0.7C0.3 5.58892 0 5.88892 0 6.28892C0 6.38892 0 6.38892 0 6.48892L1.9 13.2889C2.1 13.9889 2.6 14.3889 3.3 14.3889H12.7C13.4 14.3889 13.9 13.9889 14.1 13.2889L16 6.38892C16 6.28892 16 6.28892 16 6.18892C16 5.78892 15.7 5.38892 15.3 5.38892ZM8 2.28892L10.2 5.48892H5.9L8 2.28892Z"
+                    fill="black" />
+                </svg>
+
+                Корзина</a>
             </li>
           </ul>
         </div>
 
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__item nav-catalog">
-            <button>Каталог товаров</button>
+        <div class="main-nav__list site-nav">
+          <div class="site-nav__list nav-catalog">
+            <button class="site-nav__item nav-catalog__button" type="button">Каталог товаров</button>
             <button class="nav-catalog__toggle" type="button">
               <span class="visually-hidden">Открыть подкаталог</span>
             </button>
             <ul class="nav-catalog__list">
               <li class="nav-catalog__item">
-                <a>Виртуальная реальность</a>
+                <a href="#">Виртуальная реальность</a>
               </li>
               <li class="nav-catalog__item">
-                <a>Моноподы для селфи</a>
+                <a href="#">Моноподы для селфи</a>
               </li>
               <li class="nav-catalog__item">
-                <a>Экшн-камеры</a>
+                <a href="#">Экшн-камеры</a>
               </li>
               <li class="nav-catalog__item">
-                <a>Фитнес-браслеты</a>
+                <a href="#">Фитнес-браслеты</a>
               </li>
               <li class="nav-catalog__item">
-                <a>Умные часы</a>
+                <a href="#">Умные часы</a>
               </li>
               <li class="nav-catalog__item">
-                <a>Квадрокоптеры</a>
+                <a href="#">Квадрокоптеры</a>
               </li>
             </ul>
-          </li>
-          <li class="site-nav__item">
-            <a>Доставка</a>
-          </li>
-          <li class="site-nav__item">
-            <a>Гарантия</a>
-          </li>
-          <li class="site-nav__item">
-            <a>Контакты</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="site-nav__list site-list">
+            <li class="site-nav__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
     </div>
   </header>
   <main class="main-index main-block">
