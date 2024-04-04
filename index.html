@@ -19,7 +19,7 @@
           <form class="user-seach">
             <label class="visually-hidden" for="site-seach">Поиск по сайту</label>
             <input class="user-seach__input" type="search" name="site-seach" id="site-seach" placeholder="Текст поиска">
-            <button class="user-seach__button button" type="submit">Найти</button>
+            <button class="user-seach__button" type="submit">Найти</button>
           </form>
           <ul class="user-nav__list user-login">
             <li class="user-nav__item">
@@ -103,6 +103,53 @@
     </div>
   </header>
   <main class="main-index main-block">
+    <h1 class="visually-hidden">Магазин современных электронных устройств</h1>
+    <section class="top-models">
+      <h2 class="visually-hidden">Наши самые популярные товары</h2>
+      <div class="top-models__wrapper slider">
+        <ul class="top-models__list slider__list">
+          <li class="top-models__item  slide slider__item">
+            <h2 class="visually-hidden">Слайд номер 1</h2>
+            <p class="slide__number">01</p>
+            <img class="slide__img" src="./img/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+            <div class="slider__control">
+              <button class="slide-button slide__prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slide-button slide__next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+
+            <div class="slide__info">
+              <p class="slide__slogan">Порхает как бабочка,<br> жалит как пчела!</p>
+              <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером,
+                замаскированным под стандартную камеру.
+              </p>
+              <div class="slide__buttons">
+                <a class="slide__about button" href="#">Подробнее</a>
+                <p class="slide__toggles slider__toggles">
+                  <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
+                  <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+                  <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+                </p>
+              </div>
+              <dl class="propety__list">
+                <div class="propety__item">
+                  <dt class="propety__number">800 м</dt>
+                  <dd class="propety__description">Дальность полёта</dd>
+                </div>
+                <div class="propety__item">
+                  <dt class="propety__number">50 м</dt>
+                  <dd class="propety__description">Радиус поражения</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
 
   </main>
 </body>
