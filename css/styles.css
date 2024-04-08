@@ -63,7 +63,7 @@
   color: #000000;
 }
 
-.main-block {
+.page__main-block {
   flex-grow: 1;
 }
 
@@ -446,7 +446,9 @@
 }
 
 .servises__toggle--current {
+  inline-size: 280px;
   block-size: 40px;
+  padding-inline-end: 120px;
   background-color: #000000;
   color: #FFE17F;
 }
@@ -484,13 +486,146 @@
   display: flex;
   justify-content: space-between;
   margin-inline: auto;
+  margin-block-end: 70px;
+  background-color: #F0F0F0;
+}
+
+.delivery__img {
+  box-sizing: border-box;
+  inline-size: 125px;
+  block-size: 100px;
+  margin: 0;
+  padding-inline: 39px;
+  padding-block: 35px;
+  background-color: #FFE17F;
+}
+
+.delivery__text {
+  align-self: center;
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.delivery__info {
+  box-sizing: border-box;
+  inline-size: 125px;
+  block-size: 100px;
+  margin: 0;
+  padding-inline: 42.5px;
+  padding-block: 30px;
+}
+
+.delivery__button {
+  inline-size: 40px;
+  block-size: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border: none;
+  border-radius: 50%;
 }
 
 .page__inner {
   inline-size: 1160px;
   display: flex;
   justify-content: space-between;
+  gap: 108px;
   margin-inline: auto;
+  margin-block-end: 70px;
+}
+
+.about {
+  inline-size: 520px;
+}
+
+.about__title {
+  margin: 0;
+  margin-block: 47px 48px;
+  font-family: raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.about__text {
+  margin: 0;
+  margin-inline-end: 23px;
+  margin-block-end: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin: 0;
+  margin-block-end: 46px;
+  padding: 0;
+  padding-inline-start: 34px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about__button {
+  inline-size: 270px;
+  block-size: 8px;
+}
+
+.contacts {
+  inline-size: 532px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-block: 47px 48px;
+  font-family: raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  margin-block-start: 30px;
+  margin-block-end: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-inline-end: 35px;
+  margin-block-end: 30px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__address {
+  margin: 0;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__phone {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__list {
+  margin: 0;
+  margin-block-end: 46px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .subscribe {
