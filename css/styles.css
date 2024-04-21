@@ -962,7 +962,7 @@
 
 .social__link:focus  {
   outline: 2px #AF4FFF solid;
-  border-radius: 0;
+  border-radius: 50px;
 }
 
 
