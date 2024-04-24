@@ -242,7 +242,7 @@
               <div class="sorting__select select">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select__control" id="sorting" name="sorting">
-                  <option value="popular">Сначала популярное</option>
+                  <option value="popular">Популярные</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
                 </select>
@@ -250,8 +250,16 @@
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
             <div class="sorting__toggles">
-              <a class="card-grid-toggle" href="#">!</a>
-              <a class="card-grid-toggle card-grid-toggle-current" href="#">!</a>
+              <a class="sorting__toggle" href="#">
+                <svg class="sorting__icon" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0L11.5 10H0.5" />
+                </svg>
+              </a>
+              <a class="sorting__toggle sorting__toggle--current" href="#">
+                <svg class="sorting__icon" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0"/>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="product">
@@ -285,16 +293,12 @@
                 </div>
               </li>
             </ul>
-            <button class="pagination__button pagination__button--show-more button" type="button">Загрузить ещё</button>
-            <div class="pagination">
+            <button class="product__button button" type="button">Загрузить ещё</button>
+            <div class="product__pagination pagination">
+              <a class="pagination__link pagination__link--prev  button">Назад</a>
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--prev pagination__link--disabled">
-                    <span class="visually-hidden">Назад</span>
-                  </a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link pagination--current">1</a>
+                  <a class="pagination__link pagination--current" href="#">1</a>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">2</a>
@@ -308,12 +312,8 @@
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">15</a>
                 </li>
-                <li class="pagination__item">
-                  <a class="pagination-__ink pagination__link--next" href="#">
-                    <span class="visually-hidden">Вперёд</span>
-                  </a>
-                </li>
               </ul>
+              <a class="pagination__link pagination__link--next button" href="#">Вперёд</a>
             </div>
           </div>
         </div>
