@@ -681,17 +681,18 @@
 }
 
 .servises {
+  max-block-size: 289px;
   background-color: #F0F0F0;
 }
 
 .servises__wrapper {
   position: relative;
-  bottom: 102px;
   inline-size: 1160px;
+  bottom: 102px;
   display: flex;
   margin-inline: auto;
   margin-block-end: 72px;
-}
+ }
 
 .servises__toggles {
   display: flex;
@@ -715,10 +716,29 @@
   color: #FFE17F;
 }
 
+.servises__toggle--current:hover {
+  background-color: #000000;
+  color: rgba(255, 225, 127, 0.5)
+}
+
+.servises__toggle--current:active {
+  background-color: #000000;
+  color: rgba(255, 225, 127, 0.3)
+}
+
 .servises__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.servises__list::before {
+  position: absolute;
+  content: "";
+  inline-size: 7px;
+  block-size: 319px;
+  background-color: #000000;
 }
 
 .servises__item {
@@ -726,6 +746,12 @@
   margin-inline-end: 63px;
   margin-block: 72.5px;
   padding-inline-end: 246px;
+}
+
+.servises__item--delivery {
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: center right 0;
 }
 
 .servis__title {
@@ -745,11 +771,25 @@
 
 .delivery__wrapper {
   inline-size: 1160px;
+  margin-inline: auto;
+  margin-block: 70px;
+  background-color: #F0F0F0;
+}
+
+.delivery__link {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-inline: auto;
-  margin-block-end: 70px;
-  background-color: #F0F0F0;
+}
+
+.delivery__link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .delivery__img {
@@ -787,6 +827,33 @@
   background-color: rgba(220, 220, 220, 0.5);
   border: none;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.delivery__icon {
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+
+.delivery__link:hover .delivery__img{
+  background-color: #FFC700;
+}
+
+.delivery__link:hover .delivery__icon {
+  fill-opacity: 1;
+}
+
+.delivery__link:active .delivery__img{
+  background-color: #FFE17F;
+}
+
+.delivery__link:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.delivery__link:focus {
+  outline: 2px #AF4FFF solid;
+  outline-offset: 2px;
 }
 
 .page__inner {
@@ -799,6 +866,7 @@
 }
 
 .about {
+  position: relative;
   inline-size: 520px;
 }
 
@@ -809,6 +877,16 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
+}
+
+.about__title::before {
+  position: absolute;
+  content: "";
+  inline-size: 84px;
+  block-size: 7px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
 }
 
 .about__text {
@@ -836,9 +914,11 @@
 .about__button {
   inline-size: 270px;
   block-size: 8px;
+  margin-block-end: 16px;
 }
 
 .contacts {
+  position: relative;
   inline-size: 532px;
 }
 
@@ -849,6 +929,16 @@
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
+}
+
+.contacts__title::before {
+  position: absolute;
+  content: "";
+  inline-size: 84px;
+  block-size: 7px;
+  top: 0;
+  left: 0;
+  background-color: #000000;
 }
 
 .contacts__subtitle {
@@ -863,7 +953,6 @@
 .contacts__text {
   margin: 0;
   margin-inline-end: 35px;
-  margin-block-end: 30px;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
@@ -889,6 +978,12 @@
   list-style-type: none;
   font-size: 18px;
   line-height: 30px;
+}
+
+.contacts-whrite__button {
+  inline-size: 270px;
+  block-size: 8px;
+  margin-block-end: 16px;
 }
 
 .subscribe {
@@ -942,6 +1037,16 @@
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  appearance: none;
+}
+
+.subscribe-form__input:focus {
+  outline-color: transparent;
+  background-color: #DCDCDC;
+}
+
+.subscribe-form__input:invalid {
+  border-bottom-color: #FF3D3D;
 }
 
 .subscribe-form__button {
@@ -950,6 +1055,23 @@
   background-color: transparent;
   border: 3px #CECECE solid;
   cursor: pointer;
+  transition: border-color 50ms ease-out;
+}
+
+.subscribe-form__button:hover {
+  block-size: 57px;
+  border-color: #000000;
+  transition: background-color 50ms ease-out, opacity 50ms ease-out;
+}
+
+.subscribe-form__button:active {
+  block-size: 57px;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.subscribe-form__button:focus {
+  block-size: 57px;
 }
 
 .subscribe__ps {
