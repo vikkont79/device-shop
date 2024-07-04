@@ -83,7 +83,9 @@
 }
 
 .main-header__wrapper {
+  box-sizing: content-box;
   inline-size: 1160px;
+
   margin-inline: auto;
   background-color: #FFE17F;
   margin-block-start: 40px;
@@ -221,7 +223,7 @@
 
 .user-seach__button:focus {
   outline: 2px #AF4FFF solid;
-  outline-offset: 2px;
+
 }
 
 .user-list {
@@ -603,7 +605,9 @@
 }
 
 .index-catalog__wrapper {
-  inline-size: 1160px;
+  box-sizing: border-box;
+  inline-size: 1440px;
+  padding-inline: 140px;
   margin-inline: auto;
   margin-block-end: 172px;
 }
@@ -686,12 +690,14 @@
 }
 
 .servises__wrapper {
+  box-sizing: border-box;
   margin-block-start: -102px;
-  inline-size: 1160px;
+  inline-size: 1440px;
+  padding-inline: 140px;
   display: flex;
   margin-inline: auto;
   margin-block-end: 72px;
- }
+}
 
 .servises__toggles {
   display: flex;
@@ -769,13 +775,16 @@
 }
 
 .delivery__wrapper {
-  inline-size: 1160px;
+  box-sizing: border-box;
+  inline-size: 1440px;
+  padding-inline: 140px;
   margin-inline: auto;
   margin-block: 70px;
   background-color: #F0F0F0;
 }
 
 .delivery__link {
+  display: block;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -836,7 +845,7 @@
   fill-opacity: 0.3;
 }
 
-.delivery__link:hover .delivery__img{
+.delivery__link:hover .delivery__img {
   background-color: #FFC700;
 }
 
@@ -844,7 +853,7 @@
   fill-opacity: 1;
 }
 
-.delivery__link:active .delivery__img{
+.delivery__link:active .delivery__img {
   background-color: #FFE17F;
 }
 
@@ -992,7 +1001,9 @@
 }
 
 .subscribe__wrapper {
-  inline-size: 1160px;
+  box-sizing: border-box;
+  inline-size: 1440px;
+  padding-inline: 140px;
   margin-inline: auto;
 }
 
@@ -1097,7 +1108,9 @@
 }
 
 .page-footer__wrapper {
-  inline-size: 1160px;
+  box-sizing: border-box;
+  inline-size: 1440px;
+  padding-inline: 140px;
   display: grid;
   grid-template-columns: 236px 1fr 175px;
   margin-inline: auto;
@@ -1266,7 +1279,8 @@
 }
 
 .catalog-header__wrapper {
-  inline-size: 1160px;
+  inline-size: 1440px;
+  padding-inline: 140px;
   margin-inline: auto;
   margin-block: 0;
 }
@@ -1302,7 +1316,9 @@
 }
 
 .catalog-products__wrapper {
-  inline-size: 1160px;
+  box-sizing: border-box;
+  inline-size: 1440px;
+  padding-inline: 140px;
   display: grid;
   grid-template-columns: 320px 1fr;
   margin-inline: auto;
